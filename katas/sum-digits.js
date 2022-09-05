@@ -7,6 +7,21 @@
     --> 6
 */
 
-function sumDigits() {}
+function sumDigits(digits) {
+
+ 
+  sum = 0;
+
+while (digits) {
+  sum += digits % 10;
+  digits = Math.floor(digits / 10);
+
+}
+return sum
+
+}
+console.log(sumDigits(12));
+
+
 
 module.exports = sumDigits;

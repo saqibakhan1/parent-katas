@@ -1,7 +1,30 @@
+//const { default: TestRunner } = require('jest-runner');
+//const { describe } = require('yargs');
 const sumDigits = require('../katas/sum-digits');
+
 
 // Tests for sumDigits
 
+describe("sumDigits()" , () => {
+  test("if given two digits returns sum", () => {
+
+    //Arrange
+    const input = 12
+    const expected =  3
+
+    //Act
+
+   const result = sumDigits(input)
+
+    //Assert
+
+    expect(result).toBe(expected)
+
+
+
+  })
+
+})
 /*
   TEST 1 - sumDigits returns the input number when passed a single digit number
   This test has two ASSERTIONS being made
